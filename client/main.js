@@ -6,13 +6,18 @@ Router.route('/', function () {
 
 BooksCT = new ContentType({
   collection:       Books, // The collection defined above.
-  ctid:             "book", // The unique identifier for this content type.
+  ctid:             "book" // The unique identifier for this content type.
+});
+
+ContactsCT = new ContentType({
+  collection:       Contacts, // The collection defined above.
+  ctid:             "contact", // The unique identifier for this content type.
   endpoints: {
     create: {
       meta: {
-        title:      "Create a new Book sasa",
-        summary:    "Complete this form to add a new Book.",
-        help:       "Title, Author and Numbers of copies are required."
+        title:      "Create a new Contact",
+        summary:    "Complete this form to add a new Contact.",
+        help:       "All fields are mandatory."
       }
     }
   },
