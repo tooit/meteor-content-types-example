@@ -7,20 +7,18 @@ Router.route('/', function () {
 BooksCT = new ContentType({
   collection:       Books, // The collection defined above.
   ctid:             "book", // The unique identifier for this content type.
-  title:            "Book", // Human redable name.
-  meta: {
-    title:          "Book",
-    summary:        "A book is a set of written, printed, illustrated, or blank sheets, made of ink, paper, parchment, or other materials, fastened together to hinge at one side. See https://en.wikipedia.org/wiki/Book",
-    help:           "A book could not have a summary but it must have a title."
-  },
   endpoints: {
     create: {
-      enabled:      true,
       meta: {
-        title:      "Create a new Book",
+        title:      "Create a new Book sasa",
         summary:    "Complete this form to add a new Book.",
         help:       "Title, Author and Numbers of copies are required."
       }
     }
+  },
+  labels: {
+    deletePrefix: "Hey, pay attention!! The delete action is unrecoverable!! You are about to delete ",
+    deleteSuffix: "Are you 110% positive?",
+    noItemsFound: "No books found."
   }
 });
