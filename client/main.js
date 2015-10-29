@@ -1,3 +1,7 @@
+Router.configure({
+  loadingTemplate: 'loading'
+});
+
 
 // Set the default Iron Router Route.
 Router.route('/', function () {
