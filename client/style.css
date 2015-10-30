@@ -1,0 +1,10 @@
+ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+ul > li {
+  float: left;
+  list-style: none;
+  margin-right: 15px;
+}
