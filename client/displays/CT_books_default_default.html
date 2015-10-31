@@ -1,0 +1,20 @@
+<template name="CT_books_default_default">
+  {{#with meta}}
+    {{#if title}}<h2>{{{title}}}</h2>{{/if}}
+    <hr/>
+  {{/with}}
+
+  {{#with items}}
+    {{#if total}}
+      {{#each cursor}}
+        <h1>{{title}}</h1>
+        <small>By {{author}}</small><br>
+        <button class="book-view-detail">View More</button>
+        <hr>
+      {{/each}}
+      <p>You can purchase {{total}} books.</p>
+    {{else}}
+      <p>No books where found.</p>
+    {{/if}}
+  {{/with}}
+</template>

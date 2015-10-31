@@ -16,12 +16,14 @@ caching-compiler@1.0.0
 caching-html-compiler@1.0.2
 callback-hook@1.0.4
 check@1.1.0
+coffeescript@1.0.11
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.2
 ddp-server@1.2.2
 deps@1.0.9
 diff-sequence@1.0.1
+digilord:faker@1.0.7
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
@@ -72,7 +74,7 @@ spacebars-compiler@1.0.7
 standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0
-tooit:content-types@0.0.7
+tooit:content-types@0.0.8
 tracker@1.0.9
 ui@1.0.8
 underscore@1.0.4

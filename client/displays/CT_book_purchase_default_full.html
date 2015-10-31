@@ -1,0 +1,16 @@
+<template name="CT_book_purchase_default_full">
+
+  <a href="{{pathFor route='books'}}">Back to Book Store</a>
+
+  {{#with item}}
+    <h1>Purchase {{title}}</h1>
+    <h2>{{summary}}</h2>
+    <h3>By {{author}}</h3>
+    <ul>
+      <li><strong>Last Checked Out</strong>: {{lastCheckedOut}}</li>
+      <li><strong>Copies</strong>: {{copies}}</li>
+    </ul>
+    <button class="goto-default">Hide Full Detail</button>
+    <button class="goto-checkout">Buy this item</button>
+  {{/with}}
+</template>
