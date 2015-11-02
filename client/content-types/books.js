@@ -1,9 +1,10 @@
 BooksCT = new ContentType({
   collection: Books,
   ctid: "book",
+  layout: 'Layout',
   endpoints: {
     books: {
-      path: 'books',
+      path: '/books',
       name: 'books',
       displays: {
         default: {
@@ -25,7 +26,7 @@ BooksCT = new ContentType({
       }
     },
     book_purchase: {
-      path: 'books/purchase/:_id',
+      path: '/books/purchase/:_id',
       name: 'books.purchase',
       displays: {
         default: {

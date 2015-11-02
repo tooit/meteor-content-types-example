@@ -18,6 +18,7 @@ var MyCustomChartDisplay = {
 TasksCT = new ContentType({
   collection: Tasks,
   ctid: "task",
+  layout: 'Layout',
   endpoints: {
     index: {
       display: 'list',

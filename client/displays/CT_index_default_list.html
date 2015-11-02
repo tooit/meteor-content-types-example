@@ -8,7 +8,7 @@
 
   <ul>
     {{#if ct.pathTo.create}}
-      <li><a href="{{pathFor route=ct.pathTo.create}}" title="{{ct.labels.linkCreate}}">{{ct.labels.linkCreate}}</a></li>
+      <li><a href="{{ctPathFor route=ct.pathTo.create}}" title="{{ct.labels.linkCreate}}">{{ct.labels.linkCreate}}</a></li>
     {{/if}}
   </ul>
 
@@ -18,16 +18,16 @@
         {{#each cursor}}
           <li>
             <p>
-              <a href="{{pathFor route=ct.pathTo.read}}" title="{{ct.labels.linkView}}">{{title}} ({{status}})</a>
+              <a href="{{ctPathFor route=ct.pathTo.read _id=_id}}" title="{{ct.labels.linkView}}">{{title}} ({{status}})</a>
               <br>
               <small>{{summary}}</small>
               <br>
               {{#if ct.pathTo.update}}
-                <a href="{{pathFor route=ct.pathTo.update}}" title="{{ct.labels.linkEdit}}">{{ct.labels.linkEdit}}</a>
+                <a href="{{ctPathFor route=ct.pathTo.update _id=_id}}" title="{{ct.labels.linkEdit}}">{{ct.labels.linkEdit}}</a>
                 &nbsp;&nbsp;|&nbsp;&nbsp;
               {{/if}}
               {{#if ct.pathTo.delete}}
-                <a href="{{pathFor route=ct.pathTo.delete}}" title="{{ct.labels.linkDelete}}">{{ct.labels.linkDelete}}</a>
+                <a href="{{ctPathFor route=ct.pathTo.delete _id=_id}}" title="{{ct.labels.linkDelete}}">{{ct.labels.linkDelete}}</a>
               {{/if}}
             </p>
           </li>
